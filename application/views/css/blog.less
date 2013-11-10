@@ -1,0 +1,107 @@
+﻿@light-yellow : #FFFF7A;
+@gray         : #ABABAB;
+@light-gray   : #EEEEEE;
+@dark-gray    : #555555;
+@white-gray   : #F4F4F4;
+@red          : #CC0000;
+body {
+	background-image      : url(../resource/background.jpg);
+	background-attachment : fixed;
+	#top-bar {
+		width            : 1340px;
+		height           : 100px;
+		margin-top       : 35px;
+		margin-left      : -8px;
+		padding-left     : 20px;
+		background-color : @light-yellow;
+		-ms-filter       : 'progid : DXImageTransform.Microsoft.Alpha(Opacity = 70)'; /*IE8*/
+		opacity          : 0.7;                                                       /*Opera9.0+ FireFox1.5+ Safari Chrome*/
+		font             : 70px / 100px '黑体', 'Helvetica';
+	}
+	#board {
+		width            : 920px;
+		margin-top       : 10px;
+		margin-left      : 32px;
+		margin-right     : 12px;
+		padding-top      : 18px;
+		padding-left     : 8px;
+		padding-bottom   : 18px;
+		display          : inline-block;
+		vertical-align   : top;
+		background-color : @light-yellow;
+		-ms-filter       : 'progid : DXImageTransform.Microsoft.Alpha(Opacity = 90)'; /*IE8*/
+		opacity          : 0.9;                                                       /*Opera9.0+ FireFox1.5+ Safari Chrome*/
+		.article-area {
+			display        : inline-block;
+			vertical-align : top;
+			.article {
+				margin-top    : 50px;
+				margin-left   : 16px;
+				margin-bottom : 50px;
+				width  : 420px;
+				.article-title {
+					width            : 420px;
+					height           : 72px;
+					border           : 1px solid black;
+					background-color : @gray;
+					font             : bold 30px / 72px '黑体', '宋体';
+					text-align       : center;
+				}
+				.article-main {
+					width            : 380px;
+					margin-left      : 10px;
+					padding          : 10px 10px 10px 10px;
+					background-color : @light-gray;
+					font             : 18px / 24px '宋体', 'Helvetica';
+					text-indent      : 2em;
+					white-space      : normal;
+					word-break       : break-all;
+					&:first-letter {
+						display        : inline-block;
+						font           : bold 24px / 32px '黑体', '宋体';
+						text-transform : uppercase;
+					}
+					.article-more {
+						margin-left      : 316px;
+						border           : 1px solid black;
+						background-color : @dark-gray;
+						font             : normal bold 20px / 28px 'Helvetical', 'Arial';
+						text-align       : center;
+						text-decoration  : none;
+						&:link, &:visited {
+							color : @white-gray;
+						}
+						&:hover {
+							color : @red;
+						}
+						&:active {
+							color : @white-gray;
+						}
+					}
+				}
+			}
+		}
+	}
+	#side-bar {
+		position         : absolute;
+		top              : 0px;
+		left             : 1015px;
+		width            : 320px;
+		height           : 770px;
+		display          : inline-block;
+		vertical-align   : top;
+		background-color : @light-yellow;
+		-ms-filter       : 'progid : DXImageTransform.Microsoft.Alpha(Opacity = 50)'; /*IE8*/
+		opacity          : 0.5;                                                       /*Opera9.0+ FireFox1.5+ Safari Chrome*/
+	}
+	#lower-bar {
+		width            : 1360px;
+		height           : 30px;
+		margin-top       : 10px;
+		margin-left      : -8px;
+		display          : inline-block;
+		background-color : @light-yellow;
+		font             : bold 18px / 30px 'Helvetica', 'Arial';
+		text-align       : center;
+	}
+}

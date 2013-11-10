@@ -1,8 +1,16 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
-<head>
-<meta charset='utf-8'>
-<title><?php echo $title; ?> this-is-a-title</title>
-</head>
-<body>
-<h1><?php echo $heading; ?></h1>
+	<head>
+		<meta charset='utf-8'>
+		<link rel = stylesheet type = 'text/css' href = <?php echo APPPATH.'views/css/blog.css'?> />
+		<title>
+			My Blog
+		</title>
+	</head>
+	<body>
+		<div id = 'top-bar'>
+			<div id = 'blog-title'>
+				我的博客
+			</div>
+		</div>
+		<div id = 'board'>

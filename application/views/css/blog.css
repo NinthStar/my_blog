@@ -1,0 +1,108 @@
+body {
+  background-image: url(../resource/background.jpg);
+  background-attachment: fixed;
+}
+body #top-bar {
+  width: 1340px;
+  height: 100px;
+  margin-top: 35px;
+  margin-left: -8px;
+  padding-left: 20px;
+  background-color: #ffff7a;
+  -ms-filter: 'progid : DXImageTransform.Microsoft.Alpha(Opacity = 70)';
+  /*IE8*/
+  opacity: 0.7;
+  /*Opera9.0+ FireFox1.5+ Safari Chrome*/
+  font: 70px / 100px '黑体', 'Helvetica';
+}
+body #board {
+  width: 920px;
+  margin-top: 10px;
+  margin-left: 32px;
+  margin-right: 12px;
+  padding-top: 18px;
+  padding-left: 8px;
+  padding-bottom: 18px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffff7a;
+  -ms-filter: 'progid : DXImageTransform.Microsoft.Alpha(Opacity = 90)';
+  /*IE8*/
+  opacity: 0.9;
+  /*Opera9.0+ FireFox1.5+ Safari Chrome*/
+}
+body #board .article-area {
+  display: inline-block;
+  vertical-align: top;
+}
+body #board .article-area .article {
+  margin-top: 50px;
+  margin-left: 16px;
+  margin-bottom: 50px;
+  width: 420px;
+}
+body #board .article-area .article .article-title {
+  width: 420px;
+  height: 72px;
+  border: 1px solid black;
+  background-color: #ababab;
+  font: bold 30px / 72px '黑体', '宋体';
+  text-align: center;
+}
+body #board .article-area .article .article-main {
+  width: 380px;
+  margin-left: 10px;
+  padding: 10px 10px 10px 10px;
+  background-color: #eeeeee;
+  font: 18px / 24px '宋体', 'Helvetica';
+  text-indent: 2em;
+  white-space: normal;
+  word-break: break-all;
+}
+body #board .article-area .article .article-main:first-letter {
+  display: inline-block;
+  font: bold 24px / 32px '黑体', '宋体';
+  text-transform: uppercase;
+}
+body #board .article-area .article .article-main .article-more {
+  margin-left: 316px;
+  border: 1px solid black;
+  background-color: #555555;
+  font: normal bold 20px / 28px 'Helvetical', 'Arial';
+  text-align: center;
+  text-decoration: none;
+}
+body #board .article-area .article .article-main .article-more:link,
+body #board .article-area .article .article-main .article-more:visited {
+  color: #f4f4f4;
+}
+body #board .article-area .article .article-main .article-more:hover {
+  color: #cc0000;
+}
+body #board .article-area .article .article-main .article-more:active {
+  color: #f4f4f4;
+}
+body #side-bar {
+  position: absolute;
+  top: 0px;
+  left: 1015px;
+  width: 320px;
+  height: 770px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffff7a;
+  -ms-filter: 'progid : DXImageTransform.Microsoft.Alpha(Opacity = 50)';
+  /*IE8*/
+  opacity: 0.5;
+  /*Opera9.0+ FireFox1.5+ Safari Chrome*/
+}
+body #lower-bar {
+  width: 1360px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: -8px;
+  display: inline-block;
+  background-color: #ffff7a;
+  font: bold 18px / 30px 'Helvetica', 'Arial';
+  text-align: center;
+}
