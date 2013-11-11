@@ -1,12 +1,24 @@
 ﻿		</div>
 		<div id = 'side-bar'>
-			
+			<div id = 'owner-info'>
+				<div id = 'owner-head'></div>
+				<div id = 'owner-name'>USER NAME</div>
+				<div id = 'owner-autograph'>作者太懒了以至于没有在这里留下签名</div>
+				<div id = 'owner-desc'>作者太懒了以至于没有在这里留下介绍</div>
+				<div id = 'owner-contact'>
+					<div class = 'owner-contact-area'>TEL<br/>E-Mail</div>
+					<div class = 'owner-contact-area'>XXX-1234567<br/>XXXX@XXX.com</div>
+				</div>
+			</div>
+			<div id = 'theme-select-area'>
+				<div class = 'theme-selector' id = 'spring'></div>
+				<div class = 'theme-selector' id = 'summer'></div>
+				<div class = 'theme-selector' id = 'autumn'></div>
+				<div class = 'theme-selector' id = 'winter'></div>
+			</div>
 		</div>
-		<div id = 'lower-bar'>
+		<div id = 'bottom-bar'>
 			&copy; 2013
-		</div>
-		<div id = 'side-bar-bottom'>
-			
 		</div>
 		<!-- <script type='text/javascript'>
 			if (!NREUMQ.f) {
