@@ -43,11 +43,15 @@ class Blog_model extends CI_Model
 
     public function create_blog()
     {
+
+        $title = mysql_real_escape_string($this->input->post('title'));
+        $body  = mysql_real_escape_string($this->input->post('body'));
+
         $slug = url_title($this->input->post('title'),'dash',TRUE);
 
         $data = array(
-            'title' => $this->input->post('title'),
-            'body'  => $this->input->post('body'),
+            'title' => $title,
+            'body'  => $body,
             'slug'  => $slug,
             'uid'   => 1,
             'date'  => date("Y-m-d")

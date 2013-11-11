@@ -28,6 +28,8 @@ class Blog extends CI_Controller
     {
         $this->load->library("pagination");
 
+        if (! is_numeric($page)) $page = 0;
+
         $tmp = $this->blog_model->get_lists($page);
 
         $config['base_url'] = 'http://localhost/slug/index.php/blog/page/';
